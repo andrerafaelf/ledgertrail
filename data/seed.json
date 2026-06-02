@@ -1,0 +1,11 @@
+{
+  "invoices": [
+    { "id": "inv_1001", "client": "Northwind Labs", "amount": 1800, "status": "sent", "due": "2026-06-12" },
+    { "id": "inv_1002", "client": "Blue Harbor", "amount": 950, "status": "paid", "due": "2026-05-28" },
+    { "id": "inv_1003", "client": "Orbit Foods", "amount": 1240, "status": "overdue", "due": "2026-05-20" }
+  ],
+  "expenses": [
+    { "id": "exp_2001", "vendor": "AWS", "category": "Infrastructure", "amount": 84, "date": "2026-05-31" },
+    { "id": "exp_2002", "vendor": "Figma", "category": "Tools", "amount": 15, "date": "2026-05-29" }
+  ]
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>LedgerTrail</title>
+		<link rel="stylesheet" href="/styles.css" />
+	</head>
+	<body>
+		<main class="shell">
+			<header>
+				<p class="eyebrow">LedgerTrail</p>
+				<h1>Know what is paid, pending, and leaking out.</h1>
+			</header>
+
+			<section id="stats" class="stats"></section>
+
+			<section class="grid">
+				<form id="invoice-form" class="panel">
+					<h2>New invoice</h2>
+					<label>Client <input name="client" required placeholder="Acme Studio" /></label>
+					<label>Amount <input name="amount" type="number" min="1" step="0.01" required /></label>
+					<label>Due <input name="due" type="date" required /></label>
+					<button>Create invoice</button>
+					<p id="invoice-status" class="status"></p>
+				</form>
+
+				<form id="expense-form" class="panel">
+					<h2>New expense</h2>
+					<label>Vendor <input name="vendor" required placeholder="AWS" /></label>
+					<label>Category <input name="category" required placeholder="Infrastructure" /></label>
+					<label>Amount <input name="amount" type="number" min="1" step="0.01" required /></label>
+					<label>Date <input name="date" type="date" required /></label>
+					<button>Add expense</button>
+					<p id="expense-status" class="status"></p>
+				</form>
+			</section>
+
+			<section class="grid lists">
+				<section class="panel">
+					<h2>Invoices</h2>
+					<div id="invoices" class="list"></div>
+				</section>
+				<section class="panel">
+					<h2>Expenses</h2>
+					<div id="expenses" class="list"></div>
+				</section>
+			</section>
+		</main>
+		<script src="/app.js" type="module"></script>
+	</body>
+</html>

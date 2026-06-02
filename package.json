@@ -1,0 +1,17 @@
+{
+  "name": "ledgertrail",
+  "version": "1.0.0",
+  "description": "Lightweight invoice and expense tracker with a Node REST API and browser dashboard.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrerafaelf/ledgertrail.git"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
