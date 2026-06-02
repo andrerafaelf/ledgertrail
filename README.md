@@ -12,6 +12,13 @@ I built it as a compact full stack project: a Node.js REST API, a browser dashbo
 - Show paid income, unpaid income, expenses, and net cashflow
 - Update invoice status directly from the dashboard
 
+## Demo
+
+A static demo is available at https://andrerafaelf.github.io/ledgertrail/.
+
+On GitHub Pages, changes are stored in your browser. Running locally with 
+pm start uses the Node API and JSON store.
+
 ## Running it
 
 ```bash
